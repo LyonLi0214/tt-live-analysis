@@ -14,24 +14,26 @@ description: 读取 TT 直播数据分析模板 Excel，按活动名称自动计
 
 ## 使用方式
 
+脚本路径：`/Users/lyon/my-app/tt-live-analysis/analyze.py`
+
 ### 1. 查看可用活动
 ```bash
-python3 analyze.py --file <excel_path> --list
+python3 /Users/lyon/my-app/tt-live-analysis/analyze.py --file <excel_path> --list
 ```
 
 ### 2. 分析指定活动
 ```bash
-python3 analyze.py --file <excel_path> --activity "<活动名称>"
+python3 /Users/lyon/my-app/tt-live-analysis/analyze.py --file <excel_path> --activity "<活动名称>"
 ```
 
 ### 3. 自定义输出路径
 ```bash
-python3 analyze.py --file <excel_path> --activity "<活动名称>" --output report.md
+python3 /Users/lyon/my-app/tt-live-analysis/analyze.py --file <excel_path> --activity "<活动名称>" --output report.md
 ```
 
 ### 4. 强制跳过缓存重新计算
 ```bash
-python3 analyze.py --file <excel_path> --activity "<活动名称>" --no-cache
+python3 /Users/lyon/my-app/tt-live-analysis/analyze.py --file <excel_path> --activity "<活动名称>" --no-cache
 ```
 
 ## 输出内容
